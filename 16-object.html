@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    const orang = {
+      'nama lengkap' : 'Raihan Nooriman',
+      usia : 23,
+      kewarganegaraan : 'Indonesia',
+    };
+
+
+    // orang['nama'] = 'Raihan Nooriman';
+    // orang['usia'] = 23;
+    // orang['kebangsaan'] = 'Indonesia';
+    console.info(`Nama : ${orang['nama lengkap']}`);
+    console.info(`Usia : ${orang.usia}`);
+    console.info(`Kewarganegaraan : ${orang.kewarganegaraan}`);
+
+    console.table(orang);
+
+    delete orang['usia'];
+    console.table(orang);
+  </script>
+</body>
+</html>

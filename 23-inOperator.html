@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator In</title>
+</head>
+<body>
+  <script>
+    //cek properti/index ada atau tidak ada
+    const person = {
+      firstName: 'Raihan',
+      lastName: 'Nooriman'
+    };
+    if('firstName' in person){
+      alert(`Hello ${person.firstName}`);
+    } else {
+      alert('Hello');
+    };
+
+    const student = {
+      firstName: 'Raihan',
+      midName: undefined,
+      lastName: 'Nooriman'
+    }
+    if('midName' in student){
+      alert(`Hello ${student.midName}`);
+    } else {
+      alert('Hello Student');
+    };
+
+    const name = [null, 'Raihan', null];
+    const result = 0 in name;
+    document.writeln(`<p>${result}</p>`);
+  </script>
+</body>
+</html>

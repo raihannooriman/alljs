@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <script>
+    let arrayKosong = [];
+    let ArrayNama = ['Raihan', 'Nooriman'];
+    const nama = [];
+    nama.push('Raihan');// masukkan data
+    nama.push('Noor', 'Iman');
+    console.table(nama);
+
+    console.info(nama[0]);
+    console.info(nama[1]);
+    console.info(nama[2]);
+
+    nama[0] = 'Ihan';
+    console.table(nama);
+    delete nama[2]; //hapus data tapi gak geser index
+    console.table(nama);
+    nama.push('Iman');
+    nama.push(1,2,3,4,5);
+    nama.push(['Raihan', 'Noor', 'Iman']);
+    console.table(nama);
+  </script>
+</body>
+</html>

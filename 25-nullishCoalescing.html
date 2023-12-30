@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator Nullish Coalescing</title>
+</head>
+<body>
+  <script>
+    //mengecek data null/undefined atau tidak lebih singkat
+    let parameter = 'dd';
+
+    //bukan nullish
+    let data = parameter;
+    if(data === undefined || data === null){
+      data = 'nilai default'
+    };
+    document.writeln(`<p>${data}</p>`);
+    
+    //nullish
+    data = parameter ?? 'nilai default';
+    document.writeln(`<p>${data}</p>`);
+  </script>
+</body>
+</html>
