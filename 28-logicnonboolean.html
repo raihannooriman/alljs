@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>logic non boolean</title>
+</head>
+<body>
+  <script>
+    console.log('hello' || '');
+    console.log('' || []);
+    console.log('0' || 'NOL');
+    console.log( 0 || 'NOL' );
+    console.log(null || 'NULL');
+    console.log(undefined || 'UNDEFINED');
+    console.log(0 || false);
+
+    const person = {
+      firstName : '',
+      lastName : 'Nooriman'
+    };
+
+    const name = person.firstName || person.lastName;
+    console.log(name)
+
+    console.log('hello' &&'');
+    console.log('' && []);
+    console.log('0' && 'NOL');
+    console.log( 0 && 'NOL' );
+    console.log(null && 'NULL');
+    console.log(undefined && 'UNDEFINED');
+    console.log(0 && false);
+  </script>
+</body>
+</html>
